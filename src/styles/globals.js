@@ -1,5 +1,5 @@
-import { createGlobalStyle } from 'styled-components';
-import { normalize } from 'styled-normalize';
+import { createGlobalStyle } from "styled-components";
+import { normalize } from "styled-normalize";
 
 const GlobalStyles = createGlobalStyle`
   ${normalize};
@@ -15,15 +15,16 @@ const GlobalStyles = createGlobalStyle`
 
   }
   body {
-    font-family: ${props => props.theme.fonts.main};
+    font-family: ${(props) => props.theme.fonts.main};
     font-size: 1.6rem;
-    background: ${props => props.theme.colors.background1};
-    color: ${props => props.theme.colors.primary1};
+    // background: ${(props) => props.theme.colors.background1};
+    background: #15020A;
+    color: ${(props) => props.theme.colors.primary1};
     cursor: default;
 
   }
   h1,h2,h3,h4,h5,h6,button {
-    font-family: ${props => props.theme.fonts.title};
+    font-family: ${(props) => props.theme.fonts.title};
   }
   a {
     text-decoration: none;
@@ -31,6 +32,66 @@ const GlobalStyles = createGlobalStyle`
   li{
     list-style: none;
   }
+.htmlIcon{
+
+    transform: rotate(180deg);
+}
+
+.gitIcon{
+position: fixed;
+top: 74%;
+left: 1.5%;
+
+
+}
+
+
+
+.linkedInIcon{
+position: fixed;
+top: 80%;
+left: 1.5%;
+
+}
+.codePenIcon{
+position: fixed;
+top: 86%;
+left: 1.5%;
+
+}
+.instaIcon{
+position: fixed;
+top: 26%;
+left: 1.5%;
+
+}
+
+@media all and (max-width: 1300px) {
+  .gitIcon{
+    position: absolute;
+  top: 4%;
+    left: 25.5%;
+    
+    }
+    .linkedInIcon{
+    position: absolute;
+
+      top: 4%;
+      left: 31.5%;
+      
+      }
+    .codePenIcon{
+    position: absolute;
+
+      top: 4%;
+      left: 37.5%;
+      
+      }
+  
+}
+
+
+
 
 `;
 

@@ -1,6 +1,5 @@
 import { IoIosArrowDropdown } from "react-icons/io";
 import styled from "styled-components";
-
 export const Container = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -41,6 +40,16 @@ export const Div2 = styled.div`
   grid-area: 1 / 2 / 2 / 4;
   display: flex;
   justify-content: space-around;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    grid-area: 2 / 2 / 3 / 5;
+  }
+`;
+export const Div4 = styled.div`
+  grid-area: 1 / 5 / 2 / 6;
+  gap: 2rem;
+  display: flex;
+  justify-content: space-around;
+
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
@@ -129,5 +138,53 @@ export const SocialIcons = styled.a`
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
+  }
+`;
+export const Hr = styled.hr`
+  width: 3px;
+  height: 53px;
+  margin: 20px auto;
+  border: 0;
+  background: #8892b0;
+  position: fixed;
+  top: 90%;
+  left: 95%;
+  @media (max-height: 730px) {
+    display: none;
+  }
+  @media (max-width: 1300px) {
+    display: none;
+  }
+`;
+export const A2 = styled.a`
+  writing-mode: vertical-rl;
+
+  font-size: 2rem;
+  font-family: "Tourney", cursive;
+  color: #ccd6f6;
+  position: fixed;
+  top: 55%;
+  left: 94.3%;
+  cursor: pointer;
+  opacity: 0.5;
+  &:hover {
+    color: #fff;
+  }
+
+  @media (max-width: 1300px) {
+    display: none;
+  }
+`;
+export const Hr2 = styled.a`
+  width: 3px;
+  height: 53px;
+  margin: 20px auto;
+  border: 0;
+  background: #8892b0;
+  position: fixed;
+  top: 90%;
+  left: 3%;
+  @media (max-width: 1300px) {
+    display: none;
   }
 `;

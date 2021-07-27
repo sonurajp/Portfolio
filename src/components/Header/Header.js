@@ -1,7 +1,13 @@
 import Link from "next/link";
 import React from "react";
 import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from "react-icons/ai";
+import { VscGithubAlt } from "react-icons/vsc";
+import { FaLinkedinIn } from "react-icons/fa";
+import { SiInstagram } from "react-icons/si";
 import { DiCssdeck } from "react-icons/di";
+import { AiFillHtml5 } from "react-icons/ai";
+import { SiGmail } from "react-icons/si";
+import { RiCodepenFill } from "react-icons/ri";
 
 import {
   Container,
@@ -12,50 +18,68 @@ import {
   SocialIcons,
   Span,
   A1,
+  Hr,
+  A2,
+  Hr2,
+  Div4,
 } from "./HeaderStyles";
-
 const Header = () => (
-  <Container>
-    <Div1>
-      <Link href="/">
-        {/* <a
-          style={{
-            display: "flex",
-            alignItems: "center",
-            color: "white",
-            marginBottom: "20px",
-          }}
-        > */}
-        <A1>
-          <DiCssdeck size="3rem" />
-          <Span>Portfolio</Span>
-        </A1>
-        {/* </a> */}
-      </Link>
-    </Div1>
-    <Div2>
-      <Link href="#projects">
-        <NavLink>Projects</NavLink>
-      </Link>
-      <Link href="#tech">
-        <NavLink>Technologies</NavLink>
-      </Link>
-      <Link href="#about">
-        <NavLink>About</NavLink>
-      </Link>
-    </Div2>
-    <Div3>
-      <SocialIcons href="https://github.com/sonurajp">
-        <AiFillGithub size="3rem" />
+  <>
+    <Container>
+      <Div1>
+        <Link href="/">
+          <A1>
+            <AiFillHtml5
+              style={{ position: "absolute", left: "1.5%" }}
+              className="headerIcon"
+              size="4rem"
+            />
+          </A1>
+        </Link>
+      </Div1>
+      <Div4>
+        <Link href="#projects">
+          <NavLink>Projects</NavLink>
+        </Link>
+        <Link href="#tech">
+          <NavLink>Technologies</NavLink>
+        </Link>
+        <Link href="#about">
+          <NavLink>About</NavLink>
+        </Link>
+      </Div4>
+      <Hr2 />
+
+      <SocialIcons className="gitIcon" href="https://github.com/sonurajp">
+        <VscGithubAlt size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.linkedin.com/in/sonu-dev/">
-        <AiFillLinkedin size="3rem" />
+      <SocialIcons
+        className="linkedInIcon"
+        href="https://www.linkedin.com/in/sonu-dev/"
+      >
+        <FaLinkedinIn size="3rem" />
       </SocialIcons>
-      <SocialIcons href="https://www.instagram.com/spaceman_tribe/">
-        <AiFillInstagram size="3rem" />
+
+      <SocialIcons
+        className="codePenIcon"
+        href="https://codepen.io/sonurajp-the-sasster"
+      >
+        <RiCodepenFill size="3rem" />
       </SocialIcons>
-    </Div3>
-  </Container>
+    </Container>
+
+    <Hr />
+
+    <A2>
+      <SiGmail
+        style={{
+          transform: "rotate(90deg)",
+          marginBottom: "10px",
+        }}
+      />
+      sonurajp49@gmail.com
+    </A2>
+  </>
 );
 
 export default Header;
