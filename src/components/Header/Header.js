@@ -31,7 +31,7 @@ const Header = () => (
           <A1>
             <AiFillHtml5
               style={{ position: "absolute", left: "1.5%" }}
-              className="headerIcon"
+              className="htmlIcon"
               size="4rem"
             />
           </A1>

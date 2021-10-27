@@ -69,23 +69,26 @@ left: 1.5%;
 @media all and (max-width: 1300px) {
   .gitIcon{
     position: absolute;
-  top: 4%;
+    top: 4%;
     left: 25.5%;
-    
     }
-    .linkedInIcon{
-    position: absolute;
 
+    .linkedInIcon{
+     position: absolute;
       top: 4%;
-      left: 31.5%;
+      left: 45.5%;
       
       }
-    .codePenIcon{
-    position: absolute;
 
+    .codePenIcon{
+      position: absolute;
       top: 4%;
-      left: 37.5%;
+      left: 65.5%;
       
+      }
+      
+    .htmlIcon{
+      display:none;
       }
   
 }

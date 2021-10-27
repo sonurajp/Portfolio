@@ -53,6 +53,9 @@ export const Div4 = styled.div`
   @media ${(props) => props.theme.breakpoints.sm} {
     grid-area: 2 / 2 / 3 / 5;
   }
+  @media (min-width: 768px) and (max-width: 1290px) {
+    display: none;
+  }
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
@@ -134,6 +137,7 @@ export const SocialIcons = styled.a`
   color: white;
   border-radius: 50px;
   padding: 8px;
+
   &:hover {
     background-color: #212d45;
     transform: scale(1.2);
