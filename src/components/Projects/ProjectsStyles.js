@@ -56,13 +56,6 @@ export const TitleContent = styled.div`
   width: 100%;
 `;
 
-// export const HeaderThree = styled.h3`
-//   font-weight: 500;
-//   letter-spacing: 2px;
-//   color: #c6b79b;
-//   padding: 0.5rem 0;
-//   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
-// `;
 export const HeaderThree = styled.h3`
   font-size: ${(props) => (props.title ? "3rem" : "2rem")};
   padding: 0.5rem 0;
